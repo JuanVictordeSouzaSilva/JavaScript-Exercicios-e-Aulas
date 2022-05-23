@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <script>
+        //número de entrada
+        //número de saida
+        //escolha o sinal
+        //resultado do conta
+
+        var primNumero = prompt("Digite o Primeiro Número: ");
+
+        var sinal = prompt("Digite um Sinal de sua apção: ");
+
+        while (sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/'){
+            alert("informe um sinal valido");
+            sinal = prompt("Digite um Sinal de sua apção:");
+        }
+        
+        var seguNumero = prompt("Digite o Segundo Número: ");
+
+        primNumero = parseFloat(primNumero);
+        seguNumero = parseFloat(seguNumero);
+
+        var resultado = 0
+        if (sinal == '+'){
+            resultado = primNumero + seguNumero;
+        }
+        else if (sinal == '-'){
+            resultado = primNumero - seguNumero;
+        }
+        else if (sinal == '*'){
+            resultado = primNumero * seguNumero;
+        }
+        else if (sinal == '/'){
+            resultado = primNumero / seguNumero;
+        }
+        alert ("O resultado é :" + resultado);
+
+        
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
