@@ -10,8 +10,8 @@
             matriz[i] = new Array(linha);
             matriz2[i] = new Array(linha);
         }
-        for(x = 0; x < linha; x++){
-            for (y = 0; y < colunas; y++){
+        for(var x = 0; x < linha; x++){
+            for (var y = 0; y < colunas; y++){
 
                 matriz [x][y] = (Math.round(Math.random () * 20))
             }   
